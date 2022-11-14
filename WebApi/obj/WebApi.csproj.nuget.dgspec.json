@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj": {
+    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\Domain.csproj"
+              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\Domain.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\Domain.csproj": {
+    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -148,8 +148,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj"
+              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj"
               }
             }
           }
@@ -204,14 +204,14 @@
         }
       }
     },
-    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -228,11 +228,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj"
+              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj"
               },
-              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

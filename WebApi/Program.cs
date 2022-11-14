@@ -13,8 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 builder.Services.AddScoped<INoteRepository, NoteRepository>();
 builder.Services.AddScoped<INoteService, NoteService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();   
+
 builder.Services.AddSingleton(AutoMapperConfig.Initialize());
 builder.Services.AddDbContext<MyNotesContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyNotesCS")));

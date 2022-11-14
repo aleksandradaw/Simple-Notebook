@@ -1,5 +1,4 @@
-﻿using Application.Dto;
-using Application.DTO;
+﻿using Application.DTO;
 using AutoMapper;
 using Domain.Entities;
 
@@ -14,6 +13,12 @@ namespace Application.Mappings
                 cfg.CreateMap<Note, NoteDto>();
                 cfg.CreateMap<CreateNoteDto, Note>();
                 cfg.CreateMap<UpdateNoteDto, Note>();
+                #endregion
+
+                #region Categories
+                cfg.CreateMap<Category, CategoryDto>(); 
+                cfg.CreateMap<CreateCategoryDto, Category>();
+                cfg.CreateMap<UpdateCategoryDto, Category>();
                 #endregion
             }).CreateMapper();  
     }

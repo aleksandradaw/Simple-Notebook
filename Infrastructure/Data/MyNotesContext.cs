@@ -10,9 +10,11 @@ namespace Infrastructure.Data
         }
 
         public DbSet<Note> Notes { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
+            #region Note
             modelbuilder.Entity<Note>().ToTable("Notes");
             modelbuilder.Entity<Note>().HasKey(x => x.Id);
             modelbuilder.Entity<Note>()
@@ -21,7 +23,19 @@ namespace Infrastructure.Data
                 .IsRequired();
             modelbuilder.Entity<Note>()
                .Property(x => x.Content)
-               .HasMaxLength(2000);      
+               .HasMaxLength(2000);
+
+            #endregion
+
+            #region Category
+            modelbuilder.Entity<Category>().ToTable("Categories");
+            modelbuilder.Entity<Category>().HasKey(y => y.Id);
+            modelbuilder.Entity<Category>()
+                .Property(y => y.Name)
+                .HasMaxLength(100)
+                .IsRequired();
+            #endregion
+
         }
     }
 }

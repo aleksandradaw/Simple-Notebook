@@ -19,7 +19,6 @@ namespace Infrastructure.Repositories
 
         public Note GetById(int id)
         { 
-
             return _context.Notes.SingleOrDefault(x => x.Id == id);
         }
         public Note Add(Note note)

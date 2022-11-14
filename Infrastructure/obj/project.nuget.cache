@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aOZGfi7bPwu4by1/rJM+9eGXDj3eG2OaDEO2VmTCQsvbXUKd0q+neAM4Xt654PE/2BzRuBCgNTFyiGhPpeI/6w==",
+  "dgSpecHash": "C2AjP7NIhrre/MRwcYLrdLMjZ6Yq5yuyXxUEajhmHpj+WNfu+gZzQpMQO4O5jPGmSzZ+P3k4Ij635swo61Bq0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qOjjKmHp/7KyJjdZXMNfgOdIvXgrVy/a+Zd7bYZ7ErEdjYF9GLMoBn4Uj1h0FwDvoEmxz0csG3A2PpuHmLRVzQ==",
+  "dgSpecHash": "/Xys+9B+deGP9E6QqmsXxOV6JJIjUwECK0+par0gAkHGrfCP9pfAAVFWpJLtYyNWC1XKlXzzCY/dru6oa0c7pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

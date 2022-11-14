@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rmZdB+FkXzGhaldvVZpyCI/PPF/NU+CgzQQBCR6sjtu62J4d1fQMCqkeKaG9vgy0E9cxMX8QyrRNZRGazNvliw==",
+  "dgSpecHash": "s42Y4VM6Uy5QnmpkH1qSN7v+3JkmHy0cxrz4PHN86bYnn6Nk0aBS7j+om5NolYcw5exyB9wqs5+k/ZIEP+lRAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"

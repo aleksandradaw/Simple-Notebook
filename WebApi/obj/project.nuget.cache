@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BU9hS9McX76xmO8pgvE67HaoUKR5GSmG9Ct5wN3hLOBuYL16RxmJULL4T1XM10jKWH6kBdHNYX/BysA0itCoRA==",
+  "dgSpecHash": "YUYwIDWB4jg3f0jFIn69jUcM4kdt79AIYV4ZZ2K7i7EtcMd90qrAIvL/f8YE76o8ioOYjVPfXd6ebTfEUUDs8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\OneDrive\\Desktop\\Code\\MyNotes\\MyNotes\\Simple-Notebook\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

@@ -13,6 +13,5 @@ namespace Domain.Entities
 
         }
 
-
     }
 }
