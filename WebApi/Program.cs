@@ -1,11 +1,3 @@
-using Application.Interfaces;
-using Application.Mappings;
-using Application.Services;
-using Domain.Interfaces;
-using Infrastructure.Data;
-using Infrastructure.Repositories;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

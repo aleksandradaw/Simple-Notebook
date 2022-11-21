@@ -1,10 +1,4 @@
-﻿using Application.DTO;
-using Application.Interfaces;
-using Microsoft.AspNetCore.Mvc;
-using Swashbuckle.AspNetCore.Annotations;
-using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
-
-namespace WebApi.Controllers
+﻿namespace WebApi.Controllers
 {
 
     [Route("api/[controller]")]

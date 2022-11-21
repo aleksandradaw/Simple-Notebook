@@ -1,5 +1,4 @@
-﻿using System.Reflection.Metadata;
-
+﻿
 namespace Domain.Entities
 {
     public class Note 
@@ -7,11 +6,9 @@ namespace Domain.Entities
         public int Id { get; set; }
         public string Title { get; protected set; }
         public string Content { get; protected set; }
-
-        public Note()
-        {
-
-        }
+        public NoteDetails Details { get; set; }
+        public int? CategoryId { get; set; }
+        public Category Category { get; set; }  
 
     }
 }

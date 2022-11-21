@@ -1,27 +1,31 @@
-﻿using Application.DTO;
-using Application.Interfaces;
-using AutoMapper;
-using Domain.Entities;
-using Domain.Interfaces;
-
-namespace Application.Services
+﻿namespace Application.Services
 {
     public class NoteService : INoteService
     {
 
         private readonly INoteRepository _noteRepository;
         private readonly IMapper _mapper;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public NoteService(INoteRepository noteRepository, IMapper mapper)
+        public NoteService(INoteRepository noteRepository, ICategoryRepository categoryRepository, IMapper mapper)
         {
             _noteRepository = noteRepository;
-            _mapper = mapper; 
+            _mapper = mapper;
+            _categoryRepository = categoryRepository;
 
         }
-        public IEnumerable<NoteDto> GetAllNotes()
+        public ListNotesDto GetAllNotes()
         {
             var notes = _noteRepository.GetAll();
-            return _mapper.Map<IEnumerable<NoteDto>>(notes);
+            return _mapper.Map<ListNotesDto>(notes);
+        }
+
+        public ListNotesDto SearchByKeyword(string keyword) 
+        {
+            string keyword2 = keyword.ToLowerInvariant();
+            var notes = _noteRepository.GetAll()
+                .Where(x => x.Title.ToLower().Contains(keyword2) || x.Content.ToLower().Contains(keyword2));
+            return _mapper.Map<ListNotesDto>(notes);
         }
         public NoteDto GetNoteById(int id)
         {
@@ -36,7 +40,20 @@ namespace Application.Services
                 throw new Exception("Title is empty");
             }
 
+            var category = _categoryRepository.GetById(newNote.CategoryId);
+
+            if(category == null)
+            {
+                throw new Exception("Category does not exist!");
+            }
+
             var note = _mapper.Map<Note>(newNote);
+            note.Details = new NoteDetails()
+            {
+                Created = DateTime.UtcNow,
+                Updated = DateTime.UtcNow
+            };
+
             _noteRepository.Add(note);
             return _mapper.Map<NoteDto>(note);
         }
@@ -55,7 +72,10 @@ namespace Application.Services
             }
 
             var oldNote = _noteRepository.GetById(id);
-            var newNote = _mapper.Map(updateNote,oldNote);  
+            var newNote = _mapper.Map(updateNote,oldNote);
+
+            newNote.Details.Updated = DateTime.UtcNow;
+
             _noteRepository.Update(newNote);
         }
     }

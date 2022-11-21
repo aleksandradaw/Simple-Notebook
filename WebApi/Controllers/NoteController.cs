@@ -1,9 +1,4 @@
-﻿using Application.DTO;
-using Application.Interfaces;
-using Microsoft.AspNetCore.Mvc;
-using Swashbuckle.AspNetCore.Annotations;
-using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
-
+﻿
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
@@ -21,6 +16,15 @@ namespace WebApi.Controllers
         public IActionResult Get()
         {
             var notes = _noteService.GetAllNotes();
+            return Ok(notes);
+        }
+
+
+        [SwaggerOperation(Summary = "Retrieves note with specific keyword")]
+        [HttpGet("Search/{keyword}")]
+        public IActionResult Search(string keyword)
+        {
+            var notes = _noteService.SearchByKeyword(keyword);
             return Ok(notes);
         }
 

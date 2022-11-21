@@ -1,9 +1,4 @@
-﻿using Domain.Entities;
-using Domain.Interfaces;
-using Infrastructure.Data;
-using System.Reflection.Metadata.Ecma335;
-
-namespace Infrastructure.Repositories
+﻿namespace Infrastructure.Repositories
 {
     public class NoteRepository : INoteRepository
     {
@@ -14,12 +9,17 @@ namespace Infrastructure.Repositories
         }
         public IQueryable<Note> GetAll()
         {
-            return _context.Notes;
+            return _context.Notes
+                .Include(x => x.Details)
+                .Include(y => y.Category);
         }
 
         public Note GetById(int id)
         { 
-            return _context.Notes.SingleOrDefault(x => x.Id == id);
+            return _context.Notes
+                .Include(x=>x.Details)
+                .Include(y=>y.Category)
+                .SingleOrDefault(x => x.Id == id);
         }
         public Note Add(Note note)
         {

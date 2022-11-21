@@ -1,0 +1,13 @@
+﻿global using Application.Interfaces;
+global using Application.Mappings;
+global using Application.Services;
+global using Domain.Interfaces;
+global using Infrastructure.Data;
+global using Infrastructure.Repositories;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.OpenApi.Models;
+global using Application.DTO.Category;
+global using Microsoft.AspNetCore.Mvc;
+global using Swashbuckle.AspNetCore.Annotations;
+global using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
+global using Application.DTO.Note;

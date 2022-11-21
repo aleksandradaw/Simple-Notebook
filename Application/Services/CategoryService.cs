@@ -1,9 +1,4 @@
-﻿using Application.DTO;
-using Application.Interfaces;
-using AutoMapper;
-using Domain.Entities;
-using Domain.Interfaces;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Security.Cryptography.X509Certificates;
 
 namespace Application.Services
 {
@@ -29,7 +24,12 @@ namespace Application.Services
             {
                 throw new Exception("Name is empty");
             }
-
+            var categoryWithTheSameName =_categoryRepository.GetAll()
+                .Where(x => x.Name.ToLower() == newCategory.Name.ToLower());    
+            if (categoryWithTheSameName != null) 
+            {
+                throw new Exception("Category already exsist!");
+            }
             var category = _mapper.Map<Category>(newCategory);
             _categoryRepository.Add(category);
             return _mapper.Map<CategoryDto>(category);
@@ -52,6 +52,13 @@ namespace Application.Services
             if (string.IsNullOrEmpty(updateCategory.Name))
             {
                 throw new Exception("Name is empty");
+            }
+
+            var categoryWithTheSameName = _categoryRepository.GetAll()
+             .Where(x => x.Name.ToLower() == updateCategory.Name.ToLower());
+            if (categoryWithTheSameName != null)
+            {
+                throw new Exception("Category already exsist!");
             }
             var oldCategory = _categoryRepository.GetById(id);
             var newCategory = _mapper.Map(updateCategory, oldCategory);

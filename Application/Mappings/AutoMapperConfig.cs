@@ -1,8 +1,4 @@
-﻿using Application.DTO;
-using AutoMapper;
-using Domain.Entities;
-
-namespace Application.Mappings
+﻿namespace Application.Mappings
 {
     public static class AutoMapperConfig
     {
@@ -10,9 +6,14 @@ namespace Application.Mappings
             => new MapperConfiguration(cfg =>
             {
                 #region Notes
-                cfg.CreateMap<Note, NoteDto>();
+                cfg.CreateMap<Note, NoteDto>()
+                    .ForMember(dest =>dest.Updated, act => act.MapFrom(src => src.Details.Updated));
+                cfg.CreateMap<IEnumerable<Note>, ListNotesDto>()
+                    .ForMember(dest => dest.Notes, act => act.MapFrom(src => src))
+                    .ForMember(dest => dest.Count, act => act.MapFrom(src => src.Count()));
                 cfg.CreateMap<CreateNoteDto, Note>();
                 cfg.CreateMap<UpdateNoteDto, Note>();
+            
                 #endregion
 
                 #region Categories
